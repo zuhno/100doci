@@ -1,0 +1,39 @@
+include ../mixins/warning
+
+.slide(oncontextmenu="return false" ondragstart="return false" onselectstart="return false")
+  .slide__Content.question12#q12
+    .difficulty
+      span 난이도
+      .difficulty__stars
+        img(data-src="images/svgs/fill_star.svg", alt="fill_star")
+        img(data-src="images/svgs/fill_star.svg", alt="fill_star")
+        img(data-src="images/svgs/unfill_star.svg", alt="unfill_star")
+    .question12__section.q12Section.q-section
+      .q12Section__number.q-number
+        img(data-src="https://cuttleman.github.io/bangguseok-image-hosting/mainImages/q12_top.png", alt="q12_top")
+      .q12Section__text.q-text
+        span 자전적인 이야기,
+        br
+        span 특히 자화상을 즐겨 그렸다는
+        br
+        span 점에서 #[strong 프리다칼로와 함께]
+        br
+        span #[strong 비교되기도 하는 천경자]가
+        br
+        span.mark #[mark 한을 풀어내듯 그린 이것은]?
+    .buttonContainer
+      .button(data-answer="1" ontouchstart="")
+        span 1. 호랑이
+      .button(data-answer="2" ontouchstart="")
+        span 2. 사자
+      .button(data-answer="3" ontouchstart="")
+        span 3. 뱀
+      .button(data-answer="4" ontouchstart="")
+        span 4. 원숭이
+    .hint.question12__hint
+      .hint__icon
+        img(data-src="images/svgs/fill_star.svg", alt="fill_star")
+        span hint
+        img(data-src="images/svgs/fill_star.svg", alt="fill_star")
+      .hint__img
+        img(data-src="https://cuttleman.github.io/bangguseok-image-hosting/mainImages/q12_hint.png", alt="q12_hint")

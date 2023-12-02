@@ -1,0 +1,72 @@
+@mixin octagon_common {
+  content: "";
+  position: absolute;
+  width: 102%;
+  height: 0;
+  left: -1%;
+  box-sizing: border-box;
+}
+
+@mixin octagon_top {
+  @include octagon_common;
+  top: -1px;
+  border-left: 30px solid $background;
+  border-right: 30px solid $background;
+  border-bottom: 30px solid transparent;
+}
+
+@mixin octagon_bottom {
+  @include octagon_common;
+  bottom: -1px;
+  border-left: 30px solid $background;
+  border-right: 30px solid $background;
+  border-top: 30px solid transparent;
+}
+
+@mixin octagon_btn_top {
+  @include octagon_common;
+  top: -1px;
+  border-left: 15px solid $background;
+  border-right: 15px solid $background;
+  border-bottom: 15px solid transparent;
+}
+
+@mixin octagon_btn_bottom {
+  @include octagon_common;
+  bottom: -1px;
+  border-left: 15px solid $background;
+  border-right: 15px solid $background;
+  border-top: 15px solid transparent;
+}
+
+@mixin octagon_top-small {
+  @include octagon_common;
+  top: -1px;
+  border-left: 20px solid $background;
+  border-right: 20px solid $background;
+  border-bottom: 20px solid transparent;
+}
+
+@mixin octagon_bottom-small {
+  @include octagon_common;
+  bottom: -1px;
+  border-left: 20px solid $background;
+  border-right: 20px solid $background;
+  border-top: 20px solid transparent;
+}
+
+@mixin octagon_btn_top-small {
+  @include octagon_common;
+  top: -1px;
+  border-left: 11px solid $background;
+  border-right: 11px solid $background;
+  border-bottom: 11px solid transparent;
+}
+
+@mixin octagon_btn_bottom-small {
+  @include octagon_common;
+  bottom: -1px;
+  border-left: 11px solid $background;
+  border-right: 11px solid $background;
+  border-top: 11px solid transparent;
+}

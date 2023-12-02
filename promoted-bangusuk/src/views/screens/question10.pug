@@ -1,0 +1,41 @@
+include ../mixins/warning
+
+.slide(oncontextmenu="return false" ondragstart="return false" onselectstart="return false")
+  .slide__Content.question10#q10
+    .difficulty
+      span 난이도
+      .difficulty__stars
+        img(data-src="images/svgs/fill_star.svg", alt="fill_star")
+        img(data-src="images/svgs/fill_star.svg", alt="fill_star")
+        img(data-src="images/svgs/fill_star.svg", alt="unfill_star")
+    .question10__section.q10Section.q-section
+      .q10Section__number.q-number
+        img(data-src="https://cuttleman.github.io/bangguseok-image-hosting/mainImages/q10_top.png", alt="q10_top")
+      .q10Section__text.q-text
+        span 자신만의 회화세계를 만들기 위해
+        br
+        span 긴 세월을 #[strong '한국의 산'과 '프랑스의 산']을
+        br
+        span 화폭에 담으며 고군분투한 동양과 서양의
+        br
+        span.mark #[mark '산의 화가']의 연결이 바른 것은?
+      .q10Section__mainImg
+        img(data-src="https://cuttleman.github.io/bangguseok-image-hosting/mainImages/q10_img_1.png", alt="q10_img_1")
+        img(data-src="https://cuttleman.github.io/bangguseok-image-hosting/mainImages/q10_img_2.png", alt="q10_img_2")
+    .buttonContainer
+      .button(data-answer="1" ontouchstart="")
+        span 1. 장욱진-모네
+      .button(data-answer="2" ontouchstart="")
+        span 2. 유영국-폴 세잔
+      .button(data-answer="3" ontouchstart="")
+        span 3. 박수근-마네
+      .button(data-answer="4" ontouchstart="")
+        span 4. 이응노-폴 세잔
+    +warning("위")
+    .hint
+      .hint__icon
+        img(data-src="images/svgs/fill_star.svg", alt="fill_star")
+        span hint
+        img(data-src="images/svgs/fill_star.svg", alt="fill_star")
+      .hint__img
+        img(data-src="https://cuttleman.github.io/bangguseok-image-hosting/mainImages/q10_hint.png", alt="q10_hint")

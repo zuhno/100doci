@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="shortcut icon", href="https://cuttleman.github.io/bangguseok-image-hosting/mainImages/favicon.png", type="image/png")
+    //- sns meta data
+    meta(property="og:type" content="website")
+    meta(property="og:url" content="https://bangguseokmuseum2.com")
+    meta(property="og:image" content="https://cuttleman.github.io/bangguseokResult/FvsFFZwM.png")
+    meta(property="og:image:type" content="image/png")
+    meta(property="og:image:width" content="600")
+    meta(property="og:image:height" content="315")
+    meta(property="og:title" content="《방구석 미술관 2 : 한국》 출간 기념")
+    meta(property="og:description" content="도전! 방구석 골든벨")
+    meta(name="twitter:card" content="summary_large_image")
+    //- cdn
+    script(src="https://developers.kakao.com/sdk/js/kakao.min.js")
+    script(async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js")
+    script(src="https://unpkg.com/sweetalert/dist/sweetalert.min.js")
+    link(rel="stylesheet", href="styles.css")
+    link(rel="preload" href="fonts/NanumSquareRoundR_convert.woff2" as="font" type="font/woff2" crossorigin)
+    link(rel="preload" href="fonts/NanumSquareRoundB_convert.woff2" as="font" type="font/woff2" crossorigin)
+    link(rel="preload" href="fonts/NanumSquare_acR_convert.woff2" as="font" type="font/woff2" crossorigin)
+    link(rel="preload" href="fonts/NanumSquare_acB_convert.woff2" as="font" type="font/woff2" crossorigin)
+    link(rel="preload" href="fonts/NanumBarunGothicBold_convert.woff2" as="font" type="font/woff2" crossorigin)
+    link(rel="preload" href="fonts/NanumBarunGothic_convert.woff2" as="font" type="font/woff2" crossorigin)
+    link(rel="preload" href="fonts/Jalnan_convert.woff2" as="font" type="font/woff2" crossorigin)
+    title 도전! 방구석 골든벨
+  body
+    .loadResource
+      div
+        .end
+      div
+        .end
+      div
+        .end
+      div
+        .end
+      div
+        .end
+    img.sidePoint1(data-src="images/svgs/top_left.svg", alt="side_point1")
+    img.sidePoint2(data-src="images/svgs/top_right.svg", alt="side_point2")
+    img.sidePoint3(data-src="images/svgs/bottom_left.svg", alt="side_point3")
+    img.sidePoint4(data-src="images/svgs/bottom_right.svg", alt="side_point4")
+    main(oncontextmenu="return false" ondragstart="return false" onselectstart="return false")
+      block content
+    #jsShareContent
+        
+    script(type="text/javascript").
+            Kakao.init('18c8f3c00fa85ceeff1c1c2e5eacdb9a')
+            function sendLink() {
+                const shareImageSource = document.getElementById("jsShareContent").firstChild.src;
+                Kakao.Link.sendDefault({
+                    objectType: "feed",
+                    content: {
+                        title: "《방구석 미술관 2 : 한국》 출간 기념",
+                        description: "도전! 방구석 골든벨",
+                        imageUrl: shareImageSource,
+                        imageHeight: 320,
+                        link: {
+                            mobileWebUrl: "https://bangguseokmuseum2.com",
+                            webUrl: "https://bangguseokmuseum2.com",
+                        },
+                    },
+                    buttons: [
+                        {
+                            title: '골든벨 도전',
+                            link: {
+                                mobileWebUrl: 'https://bangguseokmuseum2.com',
+                                webUrl: 'https://bangguseokmuseum2.com',
+                            },
+                        },
+                        {
+                            title: '블랙피쉬가기',
+                            link: {
+                                mobileWebUrl: 'https://www.instagram.com/blackfish_book/',
+                                webUrl: 'https://www.instagram.com/blackfish_book/',
+                            },
+                        },
+                    ],
+                })
+            }            
+            document.getElementById("facebookBtn").onclick = function () {
+              const shareLinkUrl = document.getElementById("jsShareContent").lastChild.href;
+                FB.init(
+                  {
+                    appId            : '1023531188154836',
+                    autoLogAppEvents : true,
+                    xfbml            : true,
+                    version          : 'v9.0'
+                  }
+                );
+                FB.ui(
+                  {
+                    display: "popup",
+                    method: "share",
+                    href: shareLinkUrl,
+                  },
+                  function (response) {}
+                );
+            };
+    script(src="main.js")

@@ -1,0 +1,247 @@
+@import "./configs/colors";
+@import "./configs/animation";
+
+*,
+:after,
+:before {
+  cursor: default;
+}
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+  touch-action: none;
+  body {
+    -webkit-touch-callout: none;
+    -webkit-touch-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: inherit;
+    background-color: $background;
+    overflow: hidden;
+    #jsShareContent {
+      display: none;
+    }
+    .loadResource {
+      position: fixed;
+      background-color: $background;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      z-index: 999;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      font-size: 2rem;
+      justify-content: center;
+      align-items: center;
+      &.hide {
+        display: none;
+      }
+      div {
+        position: absolute;
+        width: 10%;
+        height: 5px;
+        display: flex;
+        justify-content: flex-end;
+        transform: rotate(-90deg);
+        align-items: center;
+        &:nth-child(1) {
+          animation: $spin1;
+        }
+        &:nth-child(2) {
+          animation: $spin2;
+        }
+        &:nth-child(3) {
+          animation: $spin3;
+        }
+        &:nth-child(4) {
+          animation: $spin4;
+        }
+        &:nth-child(5) {
+          animation: $spin5;
+        }
+        .end {
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background-color: rgba(2, 2, 2, 0.842);
+          &:nth-child(1) {
+            animation: $change1;
+          }
+          &:nth-child(2) {
+            animation: $change2;
+          }
+          &:nth-child(3) {
+            animation: $change3;
+          }
+          &:nth-child(4) {
+            animation: $change4;
+          }
+          &:nth-child(5) {
+            animation: $change5;
+          }
+        }
+      }
+    }
+    & > img {
+      width: 40px;
+      z-index: 995;
+    }
+    .sidePoint1 {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+    }
+    .sidePoint2 {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+    }
+    .sidePoint3 {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+    }
+    .sidePoint4 {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+    }
+    main {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      .sliderContainer {
+        display: flex;
+        width: 100%;
+        height: 90%;
+        background-color: transparent;
+        overflow: hidden;
+        position: relative;
+        .slide {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          z-index: 0;
+          opacity: 0;
+          pointer-events: none;
+          &:first-child {
+            &#prev {
+              animation: $activeElSlide;
+            }
+            .startTotal-desktop {
+              display: none;
+            }
+          }
+          &:not(:first-child) {
+            &:not(:last-child) {
+              &#prev {
+                animation: $activeElSlide;
+              }
+            }
+            &#active {
+              animation: $nextElSlide;
+            }
+          }
+          .slide__Content {
+            width: 100%;
+            position: relative;
+            .difficulty {
+              width: fit-content;
+              font-family: "Jalnan";
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              background-color: white;
+              box-sizing: border-box;
+              padding: 2% 4%;
+              color: $difficulty;
+              border-radius: 20px;
+              font-size: 1.6rem;
+              line-height: 1.3;
+              margin-bottom: 40px;
+              .difficulty__stars {
+                display: flex;
+                align-items: center;
+                img {
+                  width: 11px;
+                  margin-left: 5px;
+                }
+              }
+            }
+            .q-section {
+              .q-text {
+                width: 100%;
+              }
+            }
+            &.question12 {
+              .hint {
+                .hint__img {
+                  img {
+                    width: 30%;
+                  }
+                }
+              }
+            }
+            .hint {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              margin: 0 auto;
+              color: $warning;
+              font-family: "NanumSquareRoundB";
+              font-size: 1.4rem;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              .hint__icon {
+                line-height: 1.1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $difficulty;
+                text-transform: uppercase;
+                padding: 2px;
+                margin: 0 auto;
+                margin-bottom: 5px;
+                border-radius: 6px;
+                background-color: $hint;
+                img {
+                  width: 6px;
+                  height: 6px;
+                  margin: 0 5px;
+                }
+              }
+              .hint__text {
+                text-align: center;
+                line-height: 1.5;
+              }
+              .hint__img {
+                text-align: center;
+                img {
+                  width: 90%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

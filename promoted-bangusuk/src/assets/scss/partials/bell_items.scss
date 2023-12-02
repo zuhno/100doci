@@ -1,0 +1,99 @@
+@import "../configs/animation";
+
+@mixin items {
+  & {
+    img {
+      width: 100%;
+    }
+  }
+  &:nth-child(1) {
+    width: 13%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: $resultItem1X;
+    img {
+      animation: $resultItem1Y;
+    }
+  }
+  &:nth-child(2) {
+    width: 9%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: $resultItem2X;
+    img {
+      animation: $resultItem2Y;
+    }
+  }
+  &:nth-child(3) {
+    width: 12%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: $resultItem3X;
+    img {
+      animation: $resultItem3Y;
+    }
+  }
+  &:nth-child(4) {
+    width: 10%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: $resultItem4X;
+    img {
+      animation: $resultItem4Y;
+    }
+  }
+  &:nth-child(5) {
+    width: 10%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: $resultItem5X;
+    img {
+      animation: $resultItem5Y;
+    }
+  }
+  &:nth-child(6) {
+    width: 9%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: $resultItem6X;
+    img {
+      animation: $resultItem6Y;
+    }
+  }
+  &:nth-child(7) {
+    width: 15%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: $resultItem7X;
+    img {
+      animation: $resultItem7Y;
+    }
+  }
+  &:nth-child(8) {
+    width: 16%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: $resultItem8X;
+    img {
+      animation: $resultItem8Y;
+    }
+  }
+  &:nth-child(9) {
+    width: 8%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: $resultItem9X;
+    img {
+      animation: $resultItem9Y;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.slide(oncontextmenu="return false" ondragstart="return false" onselectstart="return false")
+  .slide__Content.loading#loading
+    .loading__section.loadingSection
+      .loadingSection__bell
+        img(data-src="https://cuttleman.github.io/bangguseok-image-hosting/mainImages/result_wrong_top.png", alt="loading_top")
+      .loadingSection__text
+        span 도전 방구석 골든벨은
+        br
+        span #[strong 《방구석 미술관 2 : 한국》]의 내용을
+        br
+        span 바탕으로 재구성해 제작하였습니다.
+      .loadingSection__book
+        img(data-src="https://cuttleman.github.io/bangguseok-image-hosting/mainImages/main_book.png", alt="loading_main_book")
+    .loading__check#jsLoadingCheck
+      .dots
+        .dot
+        .dot
+        .dot
+      span 점수 확인중
+      .dots
+        .dot
+        .dot
+        .dot
+    //- default= display: none; conditional event= display: initial
+    .loadingButton#jsLoadingBtn
+        .button(ontouchstart="")
+          span 결과 확인하기

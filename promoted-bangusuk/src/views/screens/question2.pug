@@ -1,0 +1,33 @@
+include ../mixins/warning
+
+.slide(oncontextmenu="return false" ondragstart="return false" onselectstart="return false")
+  .slide__Content.question2#q2
+    .difficulty
+      span 난이도
+      .difficulty__stars
+        img(data-src="images/svgs/fill_star.svg", alt="fill_star")
+        img(data-src="images/svgs/fill_star.svg", alt="fill_star")
+        img(data-src="images/svgs/unfill_star.svg", alt="unfill_star")
+    .question2__section.q2Section.q-section
+      .q2Section__number.q-number
+        img(data-src="https://cuttleman.github.io/bangguseok-image-hosting/mainImages/q2_top.png", alt="q2_top")
+      .q2Section__text.q-text
+        span 방탄소년단의 멤버 RM이
+        br
+        span #[strong 서울시립 북서울미술관 '근대의 꿈']
+        br
+        span 전시 관람 후 인증샷을 찍기도 한
+        br
+        span.mark #[mark 김환기 작품]의 이름은?
+      .q2Section__mainImg
+        img(data-src="https://cuttleman.github.io/bangguseok-image-hosting/mainImages/q2_img.png", alt="q2_img")
+    .buttonContainer
+      .button(data-answer="1" ontouchstart="")
+        span 1. 영원한 음악
+      .button(data-answer="2" ontouchstart="")
+        span 2. 영원한 노래
+      .button(data-answer="3" ontouchstart="")
+        span 3. 영원한 사랑
+      .button(data-answer="4" ontouchstart="")
+        span 4. 영원한 계절
+    +warning("본 퀴즈 속 김환기", "&copy;(재)환기재단 · 환기미술관")

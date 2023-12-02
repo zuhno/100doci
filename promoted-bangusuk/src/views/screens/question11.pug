@@ -1,0 +1,32 @@
+include ../mixins/warning
+
+.slide(oncontextmenu="return false" ondragstart="return false" onselectstart="return false")
+  .slide__Content.question11#q11
+    .difficulty
+      span 난이도
+      .difficulty__stars
+        img(data-src="images/svgs/fill_star.svg", alt="fill_star")
+        img(data-src="images/svgs/unfill_star.svg", alt="fill_star")
+        img(data-src="images/svgs/unfill_star.svg", alt="unfill_star")
+    .question11__section.q11Section.q-section
+      .q11Section__number.q-number
+        img(data-src="https://cuttleman.github.io/bangguseok-image-hosting/mainImages/q11_top.png", alt="q11_top")
+      .q11Section__text.q-text
+        span 서민들의 일상을 화폭에 담아
+        br
+        span '국민화가'로도 불리는 박수근이
+        br
+        span 영향을 받은 프랑스 화가로,
+        br
+        span.mark 작품 #[mark 〈만종〉을 그린 화가의 이름은]?
+      .q11Section__mainImg
+        img(data-src="https://cuttleman.github.io/bangguseok-image-hosting/mainImages/q11_img.png", alt="q11_img")
+    .buttonContainer
+      .button(data-answer="1" ontouchstart="")
+        span 1. 밀레
+      .button(data-answer="2" ontouchstart="")
+        span 2. 마네
+      .button(data-answer="3" ontouchstart="")
+        span 3. 고흐
+      .button(data-answer="4" ontouchstart="")
+        span 4. 세잔

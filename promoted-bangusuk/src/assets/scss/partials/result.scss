@@ -1,0 +1,151 @@
+@import "./bell_items.scss";
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  .result__section {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 1.3;
+    .resultBell {
+      .resultBell--gold {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: fit-content;
+        position: relative;
+        display: none;
+        &.show {
+          display: block;
+        }
+        & > img:nth-child(1) {
+          position: absolute;
+          top: 5px;
+          left: 30%;
+          height: 60px;
+          z-index: -2;
+          animation: $bell2;
+        }
+        & > img:nth-child(2) {
+          position: absolute;
+          top: 5px;
+          left: 0;
+          height: 60px;
+          z-index: -1;
+          animation: $bell1;
+        }
+        & > img:nth-child(3) {
+          height: 65px;
+        }
+        .resultBell__items {
+          .resultBell__item {
+            position: absolute;
+            top: 50px;
+            z-index: -3;
+            @include items;
+          }
+        }
+      }
+      .resultBell--wrong {
+        margin-top: 25px;
+        margin-bottom: 30px;
+        display: none;
+        &.show {
+          display: block;
+        }
+        img {
+          width: 60px;
+        }
+      }
+    }
+    .resultSection__ment {
+      font-family: "Jalnan";
+      font-size: 2.5rem;
+      color: $buttonInner;
+      strong {
+        margin-right: 4px;
+        color: #ffed47;
+        font-size: 1.2em;
+        text-shadow: 1px 1px $buttonInner, -1px 1px $buttonInner,
+          1px -1px $buttonInner, -1px -1px $buttonInner, 0px 1px $buttonInner,
+          0px -1px $buttonInner, -1px 0px $buttonInner, 1px 0px $buttonInner,
+          2px 2px $buttonInner, -2px 2px $buttonInner, 2px -2px $buttonInner,
+          -2px -2px $buttonInner, 0px 2px $buttonInner, 0px -2px $buttonInner,
+          -2px 0px $buttonInner, 2px 0px $buttonInner, 1px 2px $buttonInner,
+          -1px 2px $buttonInner, 1px -2px $buttonInner, -1px -2px $buttonInner,
+          2px 1px $buttonInner, -2px 1px $buttonInner, 2px -1px $buttonInner,
+          -2px -1px $buttonInner;
+      }
+    }
+    .resultSection__percent {
+      font-family: "Jalnan";
+      font-size: 2.4rem;
+      background-color: white;
+      padding: 12px 23px;
+      border-radius: 100px;
+      margin: 20px 0;
+      &.gold {
+        color: $background;
+      }
+      &.wrong {
+        color: $buttonRange_1;
+      }
+    }
+    .resultSection__promote {
+      font-size: 1.7rem;
+      font-family: "NanumSquare_acR";
+      .promote__text--gold {
+        display: none;
+        &.show {
+          display: block;
+        }
+      }
+      .promote__text--wrong {
+        display: none;
+        &.show {
+          display: block;
+        }
+      }
+      .promote__book {
+        margin: 20px 0;
+        img {
+          width: 190px;
+        }
+      }
+    }
+    .resultSection__shareBtns {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #535353;
+      font-family: "NanumSquareRoundB";
+      font-size: 1.6rem;
+      .shareBtns__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        img {
+          width: 6px;
+          height: 6px;
+          margin: 0 5px;
+        }
+      }
+      .shareBtns__items {
+        display: flex;
+        img {
+          width: 50px;
+          margin: 0 2.5px;
+          &:active {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
+}

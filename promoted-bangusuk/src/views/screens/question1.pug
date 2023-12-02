@@ -1,0 +1,26 @@
+.slide(oncontextmenu="return false" ondragstart="return false" onselectstart="return false")
+  .slide__Content.question1#q1
+    .difficulty
+      span 난이도
+      .difficulty__stars
+        img(data-src="images/svgs/fill_star.svg", alt="")
+        img(data-src="images/svgs/unfill_star.svg", alt="")
+        img(data-src="images/svgs/unfill_star.svg", alt="")
+    .question1__section.q1Section.q-section
+      .q1Section__number.q-number
+        img(data-src="https://cuttleman.github.io/bangguseok-image-hosting/mainImages/q1_top.png", alt="q1_top")
+      .q1Section__text.q-text
+        span 대부분의 작품에
+        br
+        span 소가 빠지지않고 등장해
+        br
+        span #[strong '소의 화가']로 불린 화가는
+        br
+        span.mark #[mark 이중섭이다].
+      .q1Section__mainImg
+        img(data-src="https://cuttleman.github.io/bangguseok-image-hosting/mainImages/q1_img.png", alt="q1_img")
+    .buttonContainer
+      .button(data-answer="1" ontouchstart="")
+        span O
+      .button(data-answer="2" ontouchstart="")
+        span X

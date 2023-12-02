@@ -1,0 +1,32 @@
+include ../mixins/warning
+
+.slide(oncontextmenu="return false" ondragstart="return false" onselectstart="return false")
+  .slide__Content.start#start
+    .start__section.startSection
+      .startSection__topImg
+        img(data-src="https://cuttleman.github.io/bangguseok-image-hosting/mainImages/bell_item3.png", alt="bell_item3")
+        img(data-src="https://cuttleman.github.io/bangguseok-image-hosting/mainImages/bell_item2.png", alt="bell_item2")
+        img(data-src="https://cuttleman.github.io/bangguseok-image-hosting/mainImages/bell_item1.png", alt="bell")
+      .startSection__title
+        span 도전!
+        br
+        span 방구석 골든벨
+      .startSection__semiTitle
+        span #[mark 《방구석 미술관 2 : 한국》]
+        br
+        span 출간 기념 골든벨 퀴즈!
+      .startSection__book
+        img(data-src="https://cuttleman.github.io/bangguseok-image-hosting/mainImages/main_book.png", alt="book")
+        .startTotal
+          .startTotal__total
+            .total__title 총 참여 인원
+            .total__number 
+              //- This one
+          .startTotal__gold
+            .gold__title 골든벨 울린 사람
+            .gold__number 
+              //- This one
+    .startButton
+      .button(ontouchstart="")
+        span 시작하기
+      +warning("본 퀴즈 속 작가의")

@@ -1,0 +1,73 @@
+@import "../../configs/mixins.scss";
+
+.question4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  .q4Section {
+    background-color: $questionBg;
+    width: 90%;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0 20px 0;
+    box-sizing: border-box;
+    // 팔각형 피스
+    &::before {
+      @include octagon_top;
+    }
+    &::after {
+      @include octagon_bottom;
+    }
+    .q4Section__number {
+      position: absolute;
+      top: -25px;
+      img {
+        height: 50px;
+      }
+    }
+    .q4Section__text {
+      font-family: "NanumSquare_acR";
+      text-align: center;
+      line-height: 1.5;
+      font-size: 2.1rem;
+      margin-bottom: 20px;
+      .mark {
+        mark {
+          display: inline-block;
+          line-height: 0.1;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+  .buttonContainer {
+    margin-top: 15px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    justify-content: center;
+    box-sizing: border-box;
+    .button {
+      &:nth-child(1),
+      &:nth-child(3) {
+        justify-self: end;
+      }
+      &:nth-child(2),
+      &:nth-child(4) {
+        justify-self: start;
+      }
+      margin: 7px;
+      img {
+        width: 100%;
+      }
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+  }
+}

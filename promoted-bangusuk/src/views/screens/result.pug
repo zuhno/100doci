@@ -1,0 +1,62 @@
+.slide(oncontextmenu="return false" ondragstart="return false" onselectstart="return false")
+  .slide__Content.result#result
+    .result__section.resultSection
+      .resultSection__bell.resultBell
+        .resultBell--gold
+          img(data-src="https://cuttleman.github.io/bangguseok-image-hosting/mainImages/bell_item3.png", alt="bell_item3")
+          img(data-src="https://cuttleman.github.io/bangguseok-image-hosting/mainImages/bell_item2.png", alt="bell_item2")
+          img(data-src="https://cuttleman.github.io/bangguseok-image-hosting/mainImages/bell_item1.png", alt="bell")
+          .resultBell__items
+            .resultBell__item
+              img(data-src="https://cuttleman.github.io/bangguseok-image-hosting/mainImages/result_gold_item1.png", alt="result_gold_item")
+            .resultBell__item
+              img(data-src="https://cuttleman.github.io/bangguseok-image-hosting/mainImages/result_gold_item2.png", alt="result_gold_item")
+            .resultBell__item
+              img(data-src="https://cuttleman.github.io/bangguseok-image-hosting/mainImages/result_gold_item3.png", alt="result_gold_item")
+            .resultBell__item
+              img(data-src="https://cuttleman.github.io/bangguseok-image-hosting/mainImages/result_gold_item4.png", alt="result_gold_item")
+            .resultBell__item
+              img(data-src="https://cuttleman.github.io/bangguseok-image-hosting/mainImages/result_gold_item5.png", alt="result_gold_item")
+            .resultBell__item
+              img(data-src="https://cuttleman.github.io/bangguseok-image-hosting/mainImages/result_gold_item6.png", alt="result_gold_item")
+            .resultBell__item
+              img(data-src="https://cuttleman.github.io/bangguseok-image-hosting/mainImages/result_gold_item7.png", alt="result_gold_item")
+            .resultBell__item
+              img(data-src="https://cuttleman.github.io/bangguseok-image-hosting/mainImages/result_gold_item8.png", alt="result_gold_item")
+            .resultBell__item
+              img(data-src="https://cuttleman.github.io/bangguseok-image-hosting/mainImages/result_gold_item9.png", alt="result_gold_item")
+        .resultBell--wrong
+          img(data-src="https://cuttleman.github.io/bangguseok-image-hosting/mainImages/result_wrong_top.png", alt="bell")
+      //- 축하합니다 어쩌구👇d
+      .resultSection__ment#jsMyResultMent
+      //- 상위 퍼센트 표시👇
+      .resultSection__percent#jsMyResultPercent
+      .resultSection__promote.promote
+        .promote__text--gold
+          span 미술에 해박한 당신이 좋아할 책
+          br
+          span #[strong 《방구석 미술관 2 : 한국》]을
+          br
+          span 지금 만나보세요!
+        .promote__text--wrong
+          span 지금 #[strong 《방구석 미술관 2 : 한국》]에서
+          br
+          span 정답을 확인해보세요!
+        .promote__book
+          img(data-src="https://cuttleman.github.io/bangguseok-image-hosting/mainImages/main_book.png", alt="main_book")
+      .resultSection__shareBtns.shareBtns
+        .shareBtns__title
+          img(data-src="images/svgs/fill_star-result.svg", alt="fill_star")
+          span 친구에게 결과 공유하기
+          img(data-src="images/svgs/fill_star-result.svg", alt="fill_star")
+        .shareBtns__items
+          a#kakao-link-btn(href="javascript:sendLink()" ontouchstart="")
+            img.snsIcon(data-src="https://cuttleman.github.io/bangguseok-image-hosting/shareIcons/kakao-icon.png" alt="kakao-btn")
+          a#facebookBtn(ontouchstart="")
+            img.snsIcon(data-src="https://cuttleman.github.io/bangguseok-image-hosting/shareIcons/facebook-icon.png" alt="facebook-btn")
+          a#twitterBtn(href="" ontouchstart="" target="_blank")
+            img.snsIcon(data-src="https://cuttleman.github.io/bangguseok-image-hosting/shareIcons/twitter-icon.png" alt="twitter-btn")
+          a#naverBlogBtn(href="" ontouchstart="" target="_blank")
+            img.snsIcon(data-src="https://cuttleman.github.io/bangguseok-image-hosting/shareIcons/blog-icon.png" alt="naverblog-btn")
+          a#clipBoardBtn(ontouchstart="" target="_blank")
+            img.snsIcon(data-src="https://cuttleman.github.io/bangguseok-image-hosting/shareIcons/bangusuk_icon.png" alt="bookstore-btn")

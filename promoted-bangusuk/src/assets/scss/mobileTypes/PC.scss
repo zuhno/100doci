@@ -1,0 +1,557 @@
+@import "../configs/mixins.scss";
+
+@media (min-width: 800px) and (orientation: landscape) {
+  html {
+    font-size: 9px;
+    body {
+      & > img {
+        width: 40px;
+      }
+      main {
+        .sliderContainer {
+          .slide {
+            .slide__Content {
+              max-width: 400px;
+              margin: 0 auto;
+              .difficulty {
+                margin-bottom: 45px;
+                .difficulty__stars {
+                  img {
+                    width: 8px;
+                  }
+                }
+              }
+              .hint {
+                position: initial;
+                margin-top: 20px;
+              }
+              .q-section {
+                &::before {
+                  @include octagon_top-small;
+                }
+                &::after {
+                  @include octagon_bottom-small;
+                }
+              }
+              .q-number {
+                top: -25px;
+                img {
+                  height: 50px;
+                }
+              }
+              .q-text {
+                margin-bottom: 15px;
+                .mark {
+                  mark {
+                    padding-bottom: 8px;
+                  }
+                }
+              }
+            }
+            .start {
+              .startSection {
+                .startSection__topImg {
+                  margin-bottom: 20px;
+                  img {
+                    height: 55px;
+                  }
+                }
+                .startSection__semiTitle {
+                  margin: 25px 0;
+                  span {
+                    &:nth-child(1) {
+                      mark {
+                        padding-bottom: 8px;
+                      }
+                    }
+                  }
+                }
+                .startSection__book {
+                  .startTotal {
+                    .startTotal__total,
+                    .startTotal__gold {
+                      height: 100px;
+                      .total__number,
+                      .gold__number {
+                        font-size: 1.5rem;
+                      }
+                    }
+                  }
+                }
+              }
+              .startButton {
+                .button {
+                  width: 155px;
+                  height: 70px;
+                }
+                .warning {
+                  margin-top: 15px;
+                  font-size: 1.2rem;
+                }
+              }
+            }
+            .question1 {
+              .q1Section {
+                width: 90%;
+                padding: 40px 0 30px 0;
+                .q1Section__mainImg {
+                  img {
+                    width: 250px;
+                  }
+                }
+              }
+              .buttonContainer {
+                width: 240px;
+                margin-top: 30px;
+                .button {
+                  &::before {
+                    @include octagon_btn_top-small;
+                  }
+                  &::after {
+                    @include octagon_btn_bottom-small;
+                  }
+                  width: 100px;
+                  height: 100px;
+                }
+              }
+            }
+            .question2 {
+              .q2Section {
+                width: 90%;
+                padding: 30px 0 25px 0;
+                .q2Section__mainImg {
+                  img {
+                    width: 165px;
+                  }
+                }
+              }
+              .buttonContainer {
+                margin-top: 10px;
+                .button {
+                  margin: 6px;
+                  width: 140px;
+                  height: 60px;
+                  &::before {
+                    @include octagon_btn_top-small;
+                  }
+                  &::after {
+                    @include octagon_btn_bottom-small;
+                  }
+                  span {
+                    border-radius: 10px;
+                  }
+                }
+              }
+              .warning {
+                margin-top: 15px;
+                font-size: 1rem;
+              }
+            }
+            .question3 {
+              .q3Section {
+                width: 90%;
+                padding: 40px 0 30px 0;
+                .q3Section__mainImg {
+                  img {
+                    width: 250px;
+                  }
+                }
+              }
+              .buttonContainer {
+                margin-top: 20px;
+                .button {
+                  width: 140px;
+                  height: 60px;
+                  &::before {
+                    @include octagon_btn_top-small;
+                  }
+                  &::after {
+                    @include octagon_btn_bottom-small;
+                  }
+                  span {
+                    border-radius: 10px;
+                  }
+                }
+              }
+            }
+            .question4 {
+              .q4Section {
+                width: 90%;
+                padding: 35px 0 30px 0;
+                .q-text {
+                  margin-bottom: 0;
+                }
+              }
+              .buttonContainer {
+                margin-top: 15px;
+                width: 90%;
+                .button {
+                  margin: 7px;
+                  width: 140px;
+                }
+              }
+            }
+            .question5 {
+              .q5Section {
+                width: 90%;
+                padding: 35px 0 27px 0;
+                .q-text {
+                  margin-bottom: 0;
+                }
+              }
+              .buttonContainer {
+                width: 70%;
+                .button {
+                  height: 55px;
+                  margin: 7px 0;
+                  &::before {
+                    @include octagon_btn_top-small;
+                  }
+                  &::after {
+                    @include octagon_btn_bottom-small;
+                  }
+                  span {
+                    border-radius: 10px;
+                  }
+                }
+              }
+              .hint {
+                .hint__text {
+                  font-size: 1.6rem;
+                }
+              }
+            }
+            .question6 {
+              .q6Section {
+                width: 90%;
+                padding: 35px 0 25px 0;
+                .q6Section__mainImg {
+                  img {
+                    width: 160px;
+                  }
+                }
+              }
+              .buttonContainer {
+                margin-top: 15px;
+                .button {
+                  margin: 7px;
+                  width: 150px;
+                  height: 65px;
+                  &::before {
+                    @include octagon_btn_top-small;
+                  }
+                  &::after {
+                    @include octagon_btn_bottom-small;
+                  }
+                  span {
+                    border-radius: 10px;
+                  }
+                }
+              }
+            }
+            .question7 {
+              .q7Section {
+                width: 90%;
+                padding: 35px 0 30px 0;
+                .q-text {
+                  margin-bottom: 0;
+                }
+              }
+              .buttonContainer {
+                margin-top: 20px;
+                .button {
+                  margin: 7px;
+                  width: 155px;
+                  height: 60px;
+                  &::before {
+                    @include octagon_btn_top-small;
+                  }
+                  &::after {
+                    @include octagon_btn_bottom-small;
+                  }
+                  span {
+                    border-radius: 10px;
+                  }
+                }
+              }
+              .hint {
+                margin-top: 30px;
+              }
+            }
+            .question8 {
+              .q8Section {
+                width: 90%;
+                padding: 40px 0 30px 0;
+                .q8Section__mainImg {
+                  img {
+                    width: 250px;
+                  }
+                }
+              }
+              .buttonContainer {
+                margin-top: 20px;
+                .button {
+                  margin: 7px;
+                  width: 155px;
+                  height: 65px;
+                  &::before {
+                    @include octagon_btn_top-small;
+                  }
+                  &::after {
+                    @include octagon_btn_bottom-small;
+                  }
+                  span {
+                    border-radius: 10px;
+                  }
+                }
+              }
+            }
+            .question9 {
+              .q9Section {
+                width: 90%;
+                padding: 40px 0 30px 0;
+                .q9Section__mainImg {
+                  img {
+                    width: 220px;
+                  }
+                }
+              }
+              .buttonContainer {
+                margin-top: 15px;
+                .button {
+                  margin: 7px;
+                  width: 155px;
+                  height: 65px;
+                  &::before {
+                    @include octagon_btn_top-small;
+                  }
+                  &::after {
+                    @include octagon_btn_bottom-small;
+                  }
+                  span {
+                    border-radius: 10px;
+                  }
+                }
+              }
+            }
+            .question10 {
+              .q10Section {
+                width: 90%;
+                padding: 35px 0 25px 0;
+                .q10Section__mainImg {
+                  width: 80%;
+                }
+              }
+              .buttonContainer {
+                margin-top: 15px;
+                .button {
+                  margin: 7px;
+                  width: 155px;
+                  height: 60px;
+                  &::before {
+                    @include octagon_btn_top-small;
+                  }
+                  &::after {
+                    @include octagon_btn_bottom-small;
+                  }
+                  span {
+                    border-radius: 10px;
+                  }
+                }
+              }
+              .warning {
+                margin-top: 13px;
+                font-size: 1rem;
+              }
+            }
+            .question11 {
+              .q11Section {
+                width: 90%;
+                padding: 40px 0 30px 0;
+                .q11Section__mainImg {
+                  img {
+                    width: 220px;
+                  }
+                }
+              }
+              .buttonContainer {
+                margin-top: 15px;
+                .button {
+                  margin: 7px;
+                  width: 155px;
+                  height: 60px;
+                  &::before {
+                    @include octagon_btn_top-small;
+                  }
+                  &::after {
+                    @include octagon_btn_bottom-small;
+                  }
+                  span {
+                    border-radius: 10px;
+                  }
+                }
+              }
+            }
+            .question12 {
+              .q12Section {
+                width: 90%;
+                padding: 40px 0 30px 0;
+                .q-text {
+                  margin-bottom: 0;
+                }
+              }
+              .buttonContainer {
+                margin-top: 15px;
+                .button {
+                  margin: 7px;
+                  width: 155px;
+                  height: 65px;
+                  &::before {
+                    @include octagon_btn_top-small;
+                  }
+                  &::after {
+                    @include octagon_btn_bottom-small;
+                  }
+                  span {
+                    border-radius: 10px;
+                  }
+                }
+              }
+              .hint {
+                margin-top: 30px;
+              }
+            }
+            .question13 {
+              .q13Section {
+                width: 90%;
+                padding: 40px 0 30px 0;
+                .q-text {
+                  margin-bottom: 0;
+                }
+              }
+              .buttonContainer {
+                margin-top: 20px;
+                width: 70%;
+                .button {
+                  height: 85px;
+                  margin: 7px 0;
+                  &::before {
+                    @include octagon_btn_top-small;
+                  }
+                  &::after {
+                    @include octagon_btn_bottom-small;
+                  }
+                  span {
+                    border-radius: 10px;
+                  }
+                }
+              }
+            }
+            .loading {
+              .loading__section {
+                margin-top: 25px;
+                .loadingSection__bell {
+                  img {
+                    width: 65px;
+                  }
+                }
+                .loadingSection__text {
+                  margin: 35px 0;
+                }
+                .loadingSection__book {
+                  img {
+                    width: 200px;
+                  }
+                }
+              }
+              .loading__check {
+                margin: 35px;
+                .dots {
+                  .dot {
+                    width: 7px;
+                    height: 7px;
+                  }
+                }
+              }
+              .loadingButton {
+                .button {
+                  width: 165px;
+                  height: 60px;
+                  border-radius: 15px;
+                  span {
+                    border-radius: 10px;
+                  }
+                }
+              }
+            }
+            .result {
+              .result__section {
+                .resultBell {
+                  .resultBell--gold {
+                    margin-top: 0;
+                    margin-bottom: 16px;
+                    & > img:nth-child(1) {
+                      position: absolute;
+                      top: 5px;
+                      left: 30%;
+                      height: 70px;
+                      z-index: -2;
+                      animation: $bell2;
+                    }
+                    & > img:nth-child(2) {
+                      position: absolute;
+                      top: 5px;
+                      left: 0;
+                      height: 70px;
+                      z-index: -1;
+                      animation: $bell1;
+                    }
+                    & > img:nth-child(3) {
+                      height: 75px;
+                    }
+                    .resultBell__items {
+                      .resultBell__item {
+                        top: 55px;
+                      }
+                    }
+                  }
+                  .resultBell--wrong {
+                    margin-top: 15px;
+                    margin-bottom: 30px;
+                    img {
+                      width: 65px;
+                    }
+                  }
+                }
+                .resultSection__percent {
+                  padding: 15px 25px;
+                  margin: 15px 0;
+                }
+                .resultSection__promote {
+                  .promote__book {
+                    margin: 15px 0;
+                    img {
+                      width: 158px;
+                    }
+                  }
+                }
+                .resultSection__shareBtns {
+                  .shareBtns__title {
+                    img {
+                      width: 8px;
+                    }
+                  }
+                  .shareBtns__items {
+                    img {
+                      width: 45px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

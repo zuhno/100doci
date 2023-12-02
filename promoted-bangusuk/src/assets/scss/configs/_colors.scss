@@ -1,0 +1,13 @@
+$background: rgb(193, 227, 228);
+$difficulty: rgb(140, 204, 229);
+$textBg: rgb(249, 242, 100);
+$buttonRange_1: rgb(162, 139, 217);
+$buttonRange_2: rgb(117, 90, 197);
+$buttonRange: linear-gradient(160deg, $buttonRange_1 0%, $buttonRange_2 61%);
+$buttonInner: rgb(134, 106, 206);
+$buttonClick: rgba(102, 68, 180, 0.863);
+$buttonClickRange: linear-gradient(160deg, $buttonInner 0%, $buttonInner 61%);
+$questionBg: rgba(255, 255, 255, 0.549);
+$hint: rgb(95, 121, 165);
+$warning: rgb(60, 88, 136);
+$brown: rgb(219, 194, 81);
